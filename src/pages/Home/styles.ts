@@ -1,23 +1,23 @@
 import styled from 'styled-components';
 import {THEME} from '../../theme'
 
-export const Container = styled.div`
+export const Container = styled.section`
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: relative;
+    top: 80px;
 
-    div {
+    > div {
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
-
     }
 
     @media (max-width: 400px) {
@@ -50,7 +50,7 @@ export const Container = styled.div`
 export const Photo = styled.img`
     border-radius: 50%;
     max-width: 180px;
-    box-shadow: -1em 0 2em ${THEME.COLORS.SUCCESS};
+    box-shadow: 0em 0 3em ${THEME.COLORS.PRIMARY};
 `;
 
 export const Name = styled.h1`
@@ -65,7 +65,6 @@ export const Bio = styled.h2`
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
-    margin-top: 0;
 
 `;
 
@@ -76,5 +75,12 @@ export const Stats = styled.span`
  margin-left: 5px ;
  text-align: center;
  font-weight: bold;
+`;
 
+export const ButtContainer = styled.div`
+    margin-top: 50px;
+`;
+
+export const Button = styled.a`
+padding: 10px;
 `;

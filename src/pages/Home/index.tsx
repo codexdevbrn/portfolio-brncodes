@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 
-import { Container, Name, Photo, Stats, Bio } from './styles';
-import {TiLocationOutline, TiMail} from 'react-icons/ti'
+import { Container, ButtContainer, Name, Photo, Stats, Bio, Button } from './styles';
+import {TiLocationOutline, TiSocialLinkedin, TiSocialInstagramCircular /* TiMail */} from 'react-icons/ti'
+import {DiGithubBadge}  from 'react-icons/di';
 
 import api from '../../service/api';
 import { GithubTypes } from '../../@types/GithubTypes';
@@ -16,7 +17,8 @@ function Home() {
     })
 
     return (
-        <Container>
+        <>
+        <Container id='Home'>
             <Photo src={response?.avatar_url}></Photo>
             <Name>{response?.name}</Name>
             <Bio>{response?.bio}</Bio>
@@ -24,11 +26,23 @@ function Home() {
                 <TiLocationOutline color='#FAC409' size={20} />
                 <Stats>{response?.location}</Stats>
             </div>
-            <div>
+            {/* <div>
                 <TiMail color='#FAC409' size={20} />
                 <Stats>{response?.email}</Stats>
-            </div>
+            </div> */}
+             <ButtContainer>
+            <Button href={response?.html_url}>
+                <DiGithubBadge color='#FAC409' size={60} />
+            </Button>
+            <Button href='https://www.linkedin.com/in/brunoduarteads/'>
+                <TiSocialLinkedin color='#FAC409' size={60} />
+            </Button>
+            <Button href='https://www.instagram.com/brn.codes/'>
+                <TiSocialInstagramCircular color='#FAC409' size={60} />
+            </Button>
+            </ButtContainer>
         </Container>
+    </>
     )
 
 }

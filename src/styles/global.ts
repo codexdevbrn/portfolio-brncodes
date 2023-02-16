@@ -9,10 +9,9 @@ body {
     height: 100vh;
     margin: 0;
     background: ${THEME.COLORS.BACKGROUND_900};
+    font-size: 14px;;
 }
-body, input, button {
-    font-size: 14px;
-}
+
 button {
     cursor: pointer;
   }

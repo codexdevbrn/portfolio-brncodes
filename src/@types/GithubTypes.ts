@@ -6,4 +6,5 @@ export interface GithubTypes {
     avatar_url: string;
     bio: string;
     email: string;
+    html_url: string;
 }
