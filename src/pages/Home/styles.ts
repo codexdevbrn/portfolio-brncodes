@@ -84,13 +84,24 @@ export const Stats = styled.span`
  font-size: 16PX;
  margin-left: 5px ;
  text-align: center;
- font-weight: bold;
+ font-weight: lighter;
 `;
 
 export const ButtContainer = styled.div`
     margin-top: 50px;
-`;
 
-export const Button = styled.a`
-padding: 10px;
+    @media (max-width: 400px) {
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media (max-width: 300px) {
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    
+    }
 `;

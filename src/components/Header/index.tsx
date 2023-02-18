@@ -6,7 +6,7 @@ function Header(){
     return (
     <Container>
         <Buttons href='#Home'>Home</Buttons>
-        <Buttons href='#Techs'>Tecnologias</Buttons>
+        <Buttons href='#Sobre'>Sobre</Buttons>
     </Container>
 
     );

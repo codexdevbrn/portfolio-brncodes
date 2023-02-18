@@ -1,4 +1,5 @@
 import { Container, BoxTitle,Title } from "./styles";
+import Caroseul from "../../components/Carrousel";
 
 function Tecnologies() {
     return(
@@ -6,6 +7,7 @@ function Tecnologies() {
             <BoxTitle>
                 <Title>Tecnologias</Title>
             </BoxTitle>
+            <Caroseul />
         </Container>
     );
 }

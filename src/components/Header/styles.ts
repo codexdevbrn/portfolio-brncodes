@@ -12,12 +12,11 @@ export const Container = styled.header`
     width: 100%;
     flex-direction: row;
 
-    a{
+    a {
     & + a {
         margin-left: 20px;
+     }
     }
-    }
-
 `;
 
 export const Buttons = styled.a`

@@ -15,8 +15,8 @@ export const Container = styled.section`
 export const BoxTitle = styled.div`
     background-color: ${THEME.COLORS.SHAPE};
     width: 80%;
-    height: 3.5vh;
-    border-radius: 4px;
+    height: 5vh;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     display: flex;

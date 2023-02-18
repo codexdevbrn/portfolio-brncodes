@@ -1,9 +1,10 @@
 
 import {useEffect, useState} from 'react';
+import { Container, ButtContainer, Name, Photo, Stats, Bio,} from './styles';
+import {TiLocationOutline, TiMail} from 'react-icons/ti'
 
-import { Container, ButtContainer, Name, Photo, Stats, Bio, Button } from './styles';
-import {TiLocationOutline, TiSocialLinkedin, TiSocialInstagramCircular /* TiMail */} from 'react-icons/ti'
-import {DiGithubBadge}  from 'react-icons/di';
+import { SocialProps } from '../../utils/socialMedia';
+import SocialButton from '../../components/SocialButton';
 
 import api from '../../service/api';
 import { GithubTypes } from '../../@types/GithubTypes';
@@ -12,7 +13,7 @@ function Home() {
     const [response, setResponse] = useState<GithubTypes>();
 
     useEffect(() => {
-        api.get<GithubTypes>('users/codexdevbrn').then(response => {
+        api.get('users/codexdevbrn').then(response => {
             setResponse(response.data);
         })
     })
@@ -27,20 +28,19 @@ function Home() {
                 <TiLocationOutline color='#FAC409' size={20} />
                 <Stats>{response?.location}</Stats>
             </div>
-            {/* <div>
+            <div>
                 <TiMail color='#FAC409' size={20} />
-                <Stats>{response?.email}</Stats>
-            </div> */}
+                <Stats>brunoduarte.inf@outlook.com</Stats>
+            </div> 
              <ButtContainer>
-            <Button href={response?.html_url}>
-                <DiGithubBadge color='#FAC409' size={60} />
-            </Button>
-            <Button href='https://www.linkedin.com/in/brunoduarteads/'>
-                <TiSocialLinkedin color='#FAC409' size={60} />
-            </Button>
-            <Button href='https://www.instagram.com/brn.codes/'>
-                <TiSocialInstagramCircular color='#FAC409' size={60} />
-            </Button>
+            {SocialProps.map((social, idx) => {
+                return(
+                    <SocialButton 
+                    url={social.url} 
+                    idx={idx} 
+                    color={social.color}/>
+                )
+            })}
             </ButtContainer>
         </Container>
     </>

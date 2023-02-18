@@ -2,7 +2,7 @@ import React from 'react';
 import GlobalStyle from './styles/global';
 import Home from './pages/Home';
 import Header from './components/Header'
-import Tecnologies from './pages/Tecnologies';
+import Sobre from './pages/Sobre';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
     <Header/>
     <Home />
-    <Tecnologies />
+    <Sobre />
     <GlobalStyle />
     </>
   );
