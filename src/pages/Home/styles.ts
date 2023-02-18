@@ -39,6 +39,7 @@ export const Container = styled.section`
             transition: all 0.10s ;
         }
         h1 {
+
             font-size: 16px;
         }
         h2 {
@@ -50,7 +51,7 @@ export const Container = styled.section`
         }
         svg {
             width: 40px;
-        }
+    }
     }
 `;
 
@@ -65,6 +66,7 @@ export const Name = styled.h1`
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
+
     margin-top: 40px;
 `;
 

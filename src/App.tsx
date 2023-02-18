@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Header from './components/Header'
 import Tecnologies from './pages/Tecnologies';
 
+
 function App() {
   return (
     <>

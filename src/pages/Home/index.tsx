@@ -1,3 +1,4 @@
+
 import {useEffect, useState} from 'react';
 
 import { Container, ButtContainer, Name, Photo, Stats, Bio, Button } from './styles';
