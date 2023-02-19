@@ -11,7 +11,7 @@ interface Props {
 function SocialButton({url, idx, color}: Props) {
     const Icons = Social[idx];
     return (
-        <Button href={url}>
+        <Button href={url} target="_blank">
             <Icons color={color}/>
         </Button>
 );

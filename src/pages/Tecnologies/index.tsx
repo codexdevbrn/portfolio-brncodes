@@ -1,11 +1,11 @@
 import { Container } from "./styles";
-import Caroseul from "../../components/Carrousel";
+import Caroseul from "../../components/Carousel";
 import Titles from "../../components/Titles";
 
 function Tecnologies() {
-
-    const title = 'Tecnologias';
-    return(
+ const title = 'Tecnologias';
+    
+ return(
         <Container id="Techs">
             <Titles item={title}/>
             <Caroseul />

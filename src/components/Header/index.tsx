@@ -5,8 +5,8 @@ function Header(){
     <Container>
         <Navbar>
             <Buttons href='#Home'>Home</Buttons>
-            <Buttons href='#About'>Sobre</Buttons>
             <Buttons href='#Techs'>Tecnologias</Buttons>
+            <Buttons href='#About'>Sobre</Buttons>
         </Navbar>
     </Container>
     );

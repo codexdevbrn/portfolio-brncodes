@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {THEME} from '../../theme'
-import {pulse,slide} from '../../styles/keyframes';
+import {pulse,slide, opacity} from '../../styles/keyframes';
 
 
 export const Container = styled.section`
@@ -20,6 +20,7 @@ export const Container = styled.section`
         align-content: center;
         align-items: center;
         justify-content: center;
+        
     }
 
     @media (max-width: 500px) {
@@ -80,6 +81,7 @@ export const Name = styled.h1`
     text-align: center;
     margin-top: 40px;
     font-size: 40px;
+    animation: ${opacity} 1s;
 `;
 
 export const Bio = styled.h2`
@@ -89,6 +91,7 @@ export const Bio = styled.h2`
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    animation: ${opacity} 1s;
 
 `;
 

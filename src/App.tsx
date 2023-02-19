@@ -6,14 +6,13 @@ import Tecnologies from './pages/Tecnologies';
 import Footer from './components/Footer';
 import About from './pages/About';
 
-
 function App() {
   return (
     <>
     <Header/>
     <Home />
-    <About />
     <Tecnologies />
+    <About />
     <Footer/>
     <GlobalStyle />
     </>

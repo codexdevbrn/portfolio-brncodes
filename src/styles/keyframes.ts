@@ -1,4 +1,5 @@
 import { keyframes } from "styled-components";
+import { bounceIn } from 'react-animations';
 
 export const slide = keyframes`
     from {
@@ -23,4 +24,17 @@ export const pulse = keyframes`
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(139, 92, 246, 1);
   }
+`;
+
+export const opacity = keyframes`
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+`;
+
+export const caroseul = keyframes`
+${bounceIn}
 `;

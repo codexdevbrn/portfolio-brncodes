@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { caroseul } from "../../styles/keyframes";
 import { THEME } from "../../theme";
 
 export const Container = styled.div`
@@ -7,7 +8,7 @@ export const Container = styled.div`
     height: auto;
     border-radius: 10px;
     width: 80%;
-    margin: 30px 0px 60px 0px;
+    margin: 30px 0px 20px 0px;
     padding-right: 40px;
     position: relative;
     align-items: center;
@@ -60,4 +61,5 @@ export const ListContainer = styled.li`
     display: flex;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+    animation: ${caroseul} 2s linear;
 `;
