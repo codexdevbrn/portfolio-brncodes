@@ -14,5 +14,6 @@ body {
 
 button {
     cursor: pointer;
+
   }
 `;

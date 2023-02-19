@@ -7,31 +7,29 @@ export const Container = styled.div`
     height: auto;
     border-radius: 10px;
     width: 80%;
-    padding-right: 30px;
-    margin-top: 30px;
+    margin: 30px 0px 60px 0px;
+    padding-right: 40px;
     position: relative;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    box-shadow: 0 3px 2px rgba(0,0,0, .1);
 
     li{
         + li{
             margin-left: 50px;
         }
     }
+
     svg {
-        width: 50px;
-        height: 60px;
+        width: 60px;
+        height: 50px;
     }
 
     @media (max-width: 1000px) { 
         display: grid;
         grid-template-columns: repeat(4, 0.2fr);
 
-        svg {
-            width: 50px;
-            height: 60px;
-        }
     }
 
     @media (max-width: 500px) { 

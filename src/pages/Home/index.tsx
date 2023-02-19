@@ -1,6 +1,6 @@
 
 import {useEffect, useState} from 'react';
-import { Container, ButtContainer, Name, Photo, Stats, Bio,} from './styles';
+import { Container, ButtContainer, Name, Photo, Stats, Bio, } from './styles';
 import {TiLocationOutline, TiMail} from 'react-icons/ti'
 
 import { SocialProps } from '../../utils/socialMedia';
@@ -16,7 +16,7 @@ function Home() {
         api.get('users/codexdevbrn').then(response => {
             setResponse(response.data);
         })
-    })
+    }, []);
 
     return (
         <>
@@ -30,9 +30,10 @@ function Home() {
             </div>
             <div>
                 <TiMail color='#FAC409' size={20} />
-                <Stats>brunoduarte.inf@outlook.com</Stats>
-            </div> 
+                <Stats>{response?.email}</Stats>
+            </div>   
              <ButtContainer>
+             <Bio>Social:</Bio>
             {SocialProps.map((social, idx) => {
                 return(
                     <SocialButton 

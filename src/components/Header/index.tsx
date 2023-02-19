@@ -1,14 +1,14 @@
-import React from 'react';
-
-import { Container, Buttons } from './styles';
+import { Container, Buttons, Navbar } from './styles';
 
 function Header(){
     return (
     <Container>
-        <Buttons href='#Home'>Home</Buttons>
-        <Buttons href='#Sobre'>Sobre</Buttons>
+        <Navbar>
+            <Buttons href='#Home'>Home</Buttons>
+            <Buttons href='#About'>Sobre</Buttons>
+            <Buttons href='#Techs'>Tecnologias</Buttons>
+        </Navbar>
     </Container>
-
     );
 }
 

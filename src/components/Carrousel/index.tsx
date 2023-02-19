@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, ListContainer } from './styles';
 import { Techs, Images } from '../../utils/tecnologias';
 

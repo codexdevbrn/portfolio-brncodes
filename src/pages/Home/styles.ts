@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import {THEME} from '../../theme'
+import {pulse,slide} from '../../styles/keyframes';
+
 
 export const Container = styled.section`
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -20,13 +22,22 @@ export const Container = styled.section`
         justify-content: center;
     }
 
+    @media (max-width: 500px) {
+        h1{
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+    }
+
     @media (max-width: 400px) {
         img {
             width: 150px;
             transition: all 0.10s ;
         }
         h1 {
-            font-size: 30px;
+            font-size: 20px;
         }
         h2 {
             font-size: 15px;
@@ -39,11 +50,10 @@ export const Container = styled.section`
             transition: all 0.10s ;
         }
         h1 {
-
             font-size: 16px;
         }
         h2 {
-            font-size: 12px;
+            font-size: 16px;
         }
         span {
             font-size: 10px;
@@ -58,7 +68,9 @@ export const Container = styled.section`
 export const Photo = styled.img`
     border-radius: 50%;
     max-width: 180px;
-    box-shadow: 0em 0 3em ${THEME.COLORS.PRIMARY};
+    box-shadow: 0 0 0 0 ${THEME.COLORS.PRIMARY};
+    transform: scale(1);
+    animation: ${pulse} 2s backwards;
 `;
 
 export const Name = styled.h1`
@@ -66,8 +78,8 @@ export const Name = styled.h1`
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
-
     margin-top: 40px;
+    font-size: 40px;
 `;
 
 export const Bio = styled.h2`
@@ -75,6 +87,8 @@ export const Bio = styled.h2`
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 
 `;
 
@@ -88,20 +102,7 @@ export const Stats = styled.span`
 `;
 
 export const ButtContainer = styled.div`
-    margin-top: 50px;
-
-    @media (max-width: 400px) {
-        svg{
-            width: 40px;
-            height: 40px;
-        }
-    }
-
-    @media (max-width: 300px) {
-        svg{
-            width: 30px;
-            height: 30px;
-        }
-    
-    }
+    display: flex;
+    margin-top: 30px;
+    animation: ${slide} 1s linear; 
 `;
