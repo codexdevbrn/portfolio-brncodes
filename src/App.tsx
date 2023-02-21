@@ -1,20 +1,20 @@
-import React from 'react';
 import GlobalStyle from './styles/global';
-import Home from './pages/Home';
 import Header from './components/Header'
-import Tecnologies from './pages/Tecnologies';
 import Footer from './components/Footer';
-import About from './pages/About';
+import {BrowserRouter} from 'react-router-dom';
+import AppRoutes from './routes';
+import ScrollToTop from './routes/scrollTop';
 
 function App() {
   return (
     <>
-    <Header/>
-    <Home />
-    <Tecnologies />
-    <About />
-    <Footer/>
-    <GlobalStyle />
+    <GlobalStyle/>
+        <BrowserRouter>
+          <ScrollToTop/>
+            <Header/>
+            <AppRoutes/>
+            <Footer/>
+        </BrowserRouter>
     </>
   );
 }

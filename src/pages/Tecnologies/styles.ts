@@ -1,12 +1,14 @@
 import styled from "styled-components";
+import {motion} from 'framer-motion';
 
-export const Container = styled.section`
+export const Container = styled(motion.div)`
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: first baseline;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
+    padding-top: 90px;
 `;

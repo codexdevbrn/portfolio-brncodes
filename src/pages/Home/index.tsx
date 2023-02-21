@@ -20,7 +20,12 @@ function Home() {
 
     return (
         <>
-        <Container id='Home'>
+        <Container
+        key='home'
+        initial={{width: 0}} 
+        animate={{width: "100%"}} 
+        exit={{x: window.innerWidth, 
+                transition: {duration: 0.5} }}>
             <Photo src={response?.avatar_url}></Photo>
             <Name>{response?.name}</Name>
             <Bio>{response?.bio}</Bio>

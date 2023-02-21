@@ -15,5 +15,8 @@ export const BoxTitle = styled.div`
 
 export const Title = styled.h1`
     color: ${THEME.COLORS.TEXT};
-    font-family: 'Ubuntu', sans-serif;
+
+    @media (max-width: 200px) {
+   font-size: 16px;
+}
 `;

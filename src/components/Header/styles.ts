@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { THEME } from '../../theme';
 
@@ -22,10 +23,9 @@ export const Container = styled.header`
     }
 `;
 
-export const Buttons = styled.a`
+export const Buttons = styled(NavLink)`
     color: ${THEME.COLORS.TEXT};
     text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
     margin-top: 20px;
     font-size: 20px;
 

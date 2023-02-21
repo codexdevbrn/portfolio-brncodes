@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { caroseul } from "../../styles/keyframes";
+import { caroseul, backgroundCard  } from "../../styles/keyframes";
 import { THEME } from "../../theme";
 
 export const Container = styled.div`
     display: flex;
-    background-color: ${THEME.COLORS.OVERLAY};
+    background: linear-gradient(180deg, ${THEME.COLORS.OVERLAY},${THEME.COLORS.PRIMARY},${THEME.COLORS.OVERLAY});
+    background-size: 400% 400%;
     height: auto;
     border-radius: 10px;
     width: 80%;
@@ -14,7 +15,9 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     justify-items: center;
-    box-shadow: 0 3px 2px rgba(0,0,0, .1);
+    box-shadow: 0 5px 2px rgba(0,0,0, .1);
+    animation: ${backgroundCard} 0.85s ease normal;
+    transition: all ease-in-out 0.25s;
 
     li{
         + li{
@@ -31,21 +34,37 @@ export const Container = styled.div`
         display: grid;
         grid-template-columns: repeat(4, 0.2fr);
 
+        svg {
+            animation: ${caroseul} 5s linear;
+        }
     }
 
     @media (max-width: 500px) { 
         grid-template-columns: repeat(3, 0.2fr);
+        
         svg {
             width: 40px;
             height: 60px;
+            animation: ${caroseul} 5s linear;
         }
+     
         p {
             font-size: 16px;
         }
-
-    }
+    }        
     @media (max-width: 400px) {
         grid-template-columns: repeat(2, 0.2fr);
+
+        svg {
+            animation: ${caroseul} 5s linear;
+        }
+
+    }
+    @media (max-width: 200px) {
+        grid-template-columns: repeat(1, 0.2fr);
+        svg {
+            animation: ${caroseul} 2s linear;
+        }
     }
 
 `;
@@ -59,7 +78,6 @@ export const ListContainer = styled.li`
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    animation: ${caroseul} 2s linear;
+    animation: ${caroseul} 5s linear;
 `;

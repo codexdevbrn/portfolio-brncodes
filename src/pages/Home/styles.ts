@@ -1,28 +1,24 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 import {THEME} from '../../theme'
 import {pulse,slide, opacity} from '../../styles/keyframes';
 
-
-export const Container = styled.section`
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+export const Container = styled(motion.div)`
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
-    padding-top: 80px;
 
     > div {
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
-        
     }
-
     @media (max-width: 500px) {
         h1{
             font-size: 30px;
@@ -76,7 +72,6 @@ export const Photo = styled.img`
 
 export const Name = styled.h1`
     color: ${THEME.COLORS.TEXT};
-    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 40px;
@@ -86,7 +81,6 @@ export const Name = styled.h1`
 
 export const Bio = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
-    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     text-align: center;
     margin-left: 10px;
@@ -97,7 +91,6 @@ export const Bio = styled.h2`
 
 export const Stats = styled.span`
  color: ${THEME.COLORS.PRIMARY};
- font-family: 'Ubuntu', sans-serif;
  font-size: 16PX;
  margin-left: 5px ;
  text-align: center;
@@ -107,5 +100,12 @@ export const Stats = styled.span`
 export const ButtContainer = styled.div`
     display: flex;
     margin-top: 30px;
-    animation: ${slide} 1s linear; 
+    animation: ${slide} 1s linear;
+
+    @media (max-width: 200px) {
+        margin-top: 10px;
+        flex-direction: column;
+        transition: 1s;
+    
+    }
 `;

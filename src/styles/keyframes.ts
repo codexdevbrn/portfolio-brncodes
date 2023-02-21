@@ -1,5 +1,5 @@
 import { keyframes } from "styled-components";
-import { bounceIn } from 'react-animations';
+import { bounceIn,  } from 'react-animations';
 
 export const slide = keyframes`
     from {
@@ -24,7 +24,7 @@ export const pulse = keyframes`
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(139, 92, 246, 1);
   }
-`;
+`; 
 
 export const opacity = keyframes`
     from {
@@ -36,5 +36,18 @@ export const opacity = keyframes`
 `;
 
 export const caroseul = keyframes`
-${bounceIn}
+    ${bounceIn}
 `;
+
+export const backgroundCard = keyframes`
+    0%{
+        background-position:51% 100%;
+    }
+    50%{
+        background-position:51% 50%;
+    }
+    100%{
+        background-position:51% 0%;
+        }
+`;
+

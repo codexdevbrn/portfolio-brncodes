@@ -6,7 +6,11 @@ function Tecnologies() {
  const title = 'Tecnologias';
     
  return(
-        <Container id="Techs">
+    <Container
+        key='techs'
+        initial={{width: 0}} 
+        animate={{width: "100%"}} 
+        exit={{x: window.innerWidth, transition: {duration: 0.5} }}>
             <Titles item={title}/>
             <Caroseul />
         </Container>

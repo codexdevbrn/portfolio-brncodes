@@ -4,9 +4,9 @@ function Header(){
     return (
     <Container>
         <Navbar>
-            <Buttons href='#Home'>Home</Buttons>
-            <Buttons href='#Techs'>Tecnologias</Buttons>
-            <Buttons href='#About'>Sobre</Buttons>
+            <Buttons to="/">Home</Buttons>
+            <Buttons to="techs">Tecnologias</Buttons>
+            <Buttons to="about">Sobre</Buttons>
         </Navbar>
     </Container>
     );
