@@ -25,4 +25,19 @@ display: flex;
         height: 30px;
         }
     }
+
+    @media (max-height: 700px) {
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (max-height: 700px) {
+        
+        svg {
+            width: 50px;
+            height: 40px;
+        }
+    }
 `;

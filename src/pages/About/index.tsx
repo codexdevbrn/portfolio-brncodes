@@ -22,8 +22,6 @@ function About() {
                             <br/>
                             Nas horas vagas sou designer gráfico na empresa do meu amigo.<br/> 
                             <br/>
-                            Atualmente trabalho como Administrador de Banco de Dados. <br/>
-                            <br/>
                             Busco desafios que me proporcione aprendizado constrante e a possibilidade de criar aplicações com qualidade. 
                         </Text>
                     </TitleContainer>

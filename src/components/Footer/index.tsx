@@ -1,6 +1,5 @@
 import {Container} from './styles';
 
-
 function Footer(){
     return(
         <Container>

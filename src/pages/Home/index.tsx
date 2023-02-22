@@ -1,13 +1,19 @@
-
 import {useEffect, useState} from 'react';
-import { Container, ButtContainer, Name, Photo, Stats, Bio, } from './styles';
+import { GithubTypes } from '../../@types/GithubTypes';
+
+import {Container, 
+    ButtContainer, 
+    Name, 
+    Photo, 
+    Stats, 
+    Bio, 
+    Adjust} from './styles';
 import {TiLocationOutline, TiMail} from 'react-icons/ti'
 
-import { SocialProps } from '../../utils/socialMedia';
 import SocialButton from '../../components/SocialButton';
 
 import api from '../../service/api';
-import { GithubTypes } from '../../@types/GithubTypes';
+import { SocialProps } from '../../utils/socialMedia';
 
 function Home() {
     const [response, setResponse] = useState<GithubTypes>();
@@ -26,9 +32,12 @@ function Home() {
         animate={{width: "100%"}} 
         exit={{x: window.innerWidth, 
                 transition: {duration: 0.5} }}>
+            <Adjust>
             <Photo src={response?.avatar_url}></Photo>
             <Name>{response?.name}</Name>
+            </Adjust>
             <Bio>{response?.bio}</Bio>
+            
             <div>
                 <TiLocationOutline color='#FAC409' size={20} />
                 <Stats>{response?.location}</Stats>

@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { THEME } from '../../theme';
 
 export const Container = styled.header`

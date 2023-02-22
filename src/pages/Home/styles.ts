@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {motion} from 'framer-motion';
-import {THEME} from '../../theme'
-import {pulse,slide, opacity} from '../../styles/keyframes';
+import { motion } from 'framer-motion';
+import { THEME } from '../../theme'
+import { pulse, slide, opacity } from '../../styles/keyframes';
 
 export const Container = styled(motion.div)`
     display: flex;
@@ -60,6 +60,28 @@ export const Container = styled(motion.div)`
             width: 40px;
     }
     }
+
+`;
+export const Adjust = styled.div`
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    @media (max-height: 700px) {
+        flex-direction: row;
+        margin-bottom: 20px;
+        h1 {
+            margin-left: 60px;
+            font-size: 32px;
+        }
+    }
+    @media (max-height: 400px) {
+        margin-top: 80px;
+        h1 {
+            margin-left: 60px;
+            font-size: 32px;
+        }
+    }
 `;
 
 export const Photo = styled.img`
@@ -68,6 +90,13 @@ export const Photo = styled.img`
     box-shadow: 0 0 0 0 ${THEME.COLORS.PRIMARY};
     transform: scale(1);
     animation: ${pulse} 2s backwards;
+
+    @media (max-height: 700px) {
+        max-width: 120px; 
+    }
+    @media (max-height: 400px) {
+       max-width: 100px;
+    }
 `;
 
 export const Name = styled.h1`
@@ -77,6 +106,10 @@ export const Name = styled.h1`
     margin-top: 40px;
     font-size: 40px;
     animation: ${opacity} 1s;
+
+    @media (max-height: 700px) {
+        font-size: 20px;
+    }
 `;
 
 export const Bio = styled.h2`
@@ -87,25 +120,53 @@ export const Bio = styled.h2`
     margin-right: 10px;
     animation: ${opacity} 1s;
 
+    @media (max-height: 700px) {
+        font-size: 20px;
+    }
+    @media (max-height: 400px) {
+        h1 {
+            margin-left: 60px;
+            font-size: 32px;
+        }
+    }
 `;
 
 export const Stats = styled.span`
  color: ${THEME.COLORS.PRIMARY};
- font-size: 16PX;
+ font-size: 16px;
  margin-left: 5px ;
  text-align: center;
  font-weight: lighter;
+
+ @media (max-height: 700px) {
+    @media (max-height: 700px) {
+        font-size: 12px;
+    }
+}
 `;
 
 export const ButtContainer = styled.div`
     display: flex;
-    margin-top: 30px;
     animation: ${slide} 1s linear;
+    margin-top: 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: 200px) {
-        margin-top: 10px;
         flex-direction: column;
         transition: 1s;
-    
+    }
+    @media (max-height: 400px) {
+        margin-top: 10px;
+        transition: 1s;
+    }
+    @media (max-height: 300px) {
+        flex-direction: row;
+        transition: 1s;
+    }
+    @media (max-height: 400px) {
+        margin-bottom: 30px;
+        transition: 1s;
     }
 `;

@@ -11,7 +11,11 @@ export const BoxTitle = styled.div`
     display: flex;
     margin-top: 30px;
     letter-spacing: 3px;
-`;
+
+    @media (max-height: 400px) {
+        height: 14vh;
+    }
+`; 
 
 export const Title = styled.h1`
     color: ${THEME.COLORS.TEXT};

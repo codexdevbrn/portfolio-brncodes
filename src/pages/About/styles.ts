@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { THEME } from "../../theme";
 
 export const Container = styled(motion.div)`
@@ -31,7 +31,6 @@ export const TitleContainer = styled.div`
        margin: 30px 0px 90px 0px;
     }
 `;
-
 export const Text = styled.p`
 color: ${THEME.COLORS.TEXT};
 position: relative;
@@ -39,6 +38,6 @@ margin: 30px 40px 100px 40px;
 margin-bottom: 100px;
 font-size: 18px;
 font-weight: 500;
-line-height: 30px;
+line-height: 25px;
 `;
 

@@ -4,10 +4,10 @@ import { THEME } from "../../theme";
 export const Container = styled.footer`
   position: fixed;
   width: 100%;
-  height: 4vh;
+  height: 5vh;
   bottom: 0;
   background-color: ${THEME.COLORS.OVERLAY};
   text-align: center;
   color: ${THEME.COLORS.TEXT};
-  padding-top: 15px;
+  padding-top: 10px;
 `
