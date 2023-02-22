@@ -10,7 +10,7 @@ function Tecnologies() {
         key='techs'
         initial={{width: 0}} 
         animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, transition: {duration: 0.5} }}>
+        exit={{x: window.innerWidth, transition: {duration: 0.5, ease: "circIn"}}}>
             <Titles item={title}/>
             <Caroseul />
         </Container>

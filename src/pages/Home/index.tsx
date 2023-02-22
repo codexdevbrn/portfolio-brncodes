@@ -37,13 +37,12 @@ function Home() {
     }, [response]);
 
     return (
-        <>
+    <>
         <Container
         key='home'
         initial={{width: 0}} 
         animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, 
-                transition: {duration: 0.5} }}>
+        exit={{x: window.innerWidth, transition: {duration: 0.5, ease: "circIn"}}}>
             <Adjust>
             <Photo src={response?.avatar_url}></Photo>
             <Name>{response?.name}</Name>
