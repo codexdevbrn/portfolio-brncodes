@@ -22,7 +22,7 @@ function About() {
                             <br/>
                             Nas horas vagas sou designer gráfico na empresa do meu amigo.<br/> 
                             <br/>
-                            Busco desafios que me proporcione aprendizado constrante e a possibilidade de criar aplicações com qualidade. 
+                            Busco desafios que me proporcione aprendizado constante e a possibilidade de criar aplicações com qualidade. 
                         </Text>
                     </TitleContainer>
             </Container>

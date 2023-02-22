@@ -11,9 +11,11 @@ export const BoxTitle = styled.div`
     display: flex;
     margin-top: 30px;
     letter-spacing: 3px;
+    padding: 5px;
 
     @media (max-height: 400px) {
         height: 14vh;
+        padding: 0px;
     }
 `; 
 
@@ -22,5 +24,9 @@ export const Title = styled.h1`
 
     @media (max-width: 200px) {
    font-size: 16px;
+}
+
+@media (max-height: 700px) {
+   font-size: 20px;
 }
 `;

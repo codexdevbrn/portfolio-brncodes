@@ -8,8 +8,8 @@ function Caroseul() {
             {Techs.map((techs, idx) => {
                 const Icons = Images[idx];
                 return (
-                <ul>
-                   <ListContainer key={techs.id}>
+                <ul key={idx}>
+                   <ListContainer>
                     <Icons style={{color: techs.color}} />
                     <p>{techs.name}</p>
                     </ListContainer>

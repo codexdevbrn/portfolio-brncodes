@@ -16,13 +16,25 @@ import api from '../../service/api';
 import { SocialProps } from '../../utils/socialMedia';
 
 function Home() {
-    const [response, setResponse] = useState<GithubTypes>();
+    const [response, setResponse] = useState(() => {
+        const storageData = localStorage.getItem('apiData');
+        if (storageData) {
+          return JSON.parse(storageData);
+        }
+        return null;
+      });
 
     useEffect(() => {
+        if (!response) {
         api.get('users/codexdevbrn').then(response => {
-            setResponse(response.data);
+            const data: GithubTypes = response.data;
+            setResponse(data);
+            localStorage.setItem('apiData', JSON.stringify(data))
+        }).catch(err => {
+            console.log(err);
         })
-    }, []);
+    }
+    }, [response]);
 
     return (
         <>
@@ -53,7 +65,8 @@ function Home() {
                     <SocialButton 
                     url={social.url} 
                     idx={idx} 
-                    color={social.color}/>
+                    color={social.color}
+                    key={idx}/>
                 )
             })}
             </ButtContainer>

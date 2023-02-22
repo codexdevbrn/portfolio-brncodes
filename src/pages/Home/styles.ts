@@ -67,16 +67,12 @@ export const Adjust = styled.div`
     position: relative;
     flex-direction: column;
 
-    @media (max-height: 700px) {
+    @media (max-height: 600px) {
         flex-direction: row;
         margin-bottom: 20px;
-        h1 {
-            margin-left: 60px;
-            font-size: 32px;
-        }
     }
     @media (max-height: 400px) {
-        margin-top: 80px;
+        margin-top: 10vh;
         h1 {
             margin-left: 60px;
             font-size: 32px;
@@ -92,7 +88,7 @@ export const Photo = styled.img`
     animation: ${pulse} 2s backwards;
 
     @media (max-height: 700px) {
-        max-width: 120px; 
+        max-width: 160px; 
     }
     @media (max-height: 400px) {
        max-width: 100px;
@@ -107,8 +103,9 @@ export const Name = styled.h1`
     font-size: 40px;
     animation: ${opacity} 1s;
 
-    @media (max-height: 700px) {
-        font-size: 20px;
+    @media (max-height: 600px) {
+        font-size: 28px;
+        margin-left: 30px;
     }
 `;
 
@@ -148,7 +145,7 @@ export const Stats = styled.span`
 export const ButtContainer = styled.div`
     display: flex;
     animation: ${slide} 1s linear;
-    margin-top: 0px;
+    margin-top: 20px;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -158,15 +155,11 @@ export const ButtContainer = styled.div`
         transition: 1s;
     }
     @media (max-height: 400px) {
-        margin-top: 10px;
+        margin-top: 0px;
         transition: 1s;
     }
     @media (max-height: 300px) {
         flex-direction: row;
-        transition: 1s;
-    }
-    @media (max-height: 400px) {
-        margin-bottom: 30px;
         transition: 1s;
     }
 `;
