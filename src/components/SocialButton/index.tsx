@@ -1,5 +1,5 @@
 
-import {Button} from './styles';
+import { Button } from './styles';
 import { Social } from '../../utils/socialMedia';
 
 interface Props {

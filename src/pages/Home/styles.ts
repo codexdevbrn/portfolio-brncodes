@@ -74,7 +74,6 @@ export const Adjust = styled.div`
     @media (max-height: 400px) {
         margin-top: 10vh;
         h1 {
-            margin-left: 60px;
             font-size: 32px;
         }
     }
@@ -90,7 +89,7 @@ export const Photo = styled.img`
     @media (max-height: 700px) {
         max-width: 160px; 
     }
-    @media (max-height: 400px) {
+    @media (max-height: 500px) {
        max-width: 100px;
     }
 `;
@@ -105,7 +104,7 @@ export const Name = styled.h1`
 
     @media (max-height: 600px) {
         font-size: 28px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 `;
 

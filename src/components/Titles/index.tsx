@@ -1,4 +1,4 @@
-import {BoxTitle, Title} from './styles';
+import { BoxTitle, Title } from './styles';
 
 interface TitleProps {
 item: string;

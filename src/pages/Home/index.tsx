@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import { GithubTypes } from '../../@types/GithubTypes';
 
 import {Container, 
