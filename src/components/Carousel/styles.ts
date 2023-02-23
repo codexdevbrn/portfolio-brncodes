@@ -19,7 +19,7 @@ export const Container = styled.div`
     animation: ${backgroundCard} 0.85s ease normal;
     transition: all ease-in-out 0.25s;
 
-    li{
+    li {
         + li{
             margin-left: 50px;
         }
@@ -68,8 +68,7 @@ export const Container = styled.div`
     }
 
     @media (max-height: 600px) {
-        grid-template-columns: repeat(3, 0.2fr);
-
+        grid-template-columns: repeat(4, 0.2fr);
         svg {
             width: 40px;
             animation: ${caroseul} 2s linear;

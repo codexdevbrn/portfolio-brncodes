@@ -1,5 +1,5 @@
 import { keyframes } from "styled-components";
-import { bounceIn,  } from 'react-animations';
+import { bounceIn } from 'react-animations';
 
 export const slide = keyframes`
     from {

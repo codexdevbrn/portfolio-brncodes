@@ -80,7 +80,7 @@ export const Adjust = styled.div`
 `;
 
 export const Photo = styled.img`
-    border-radius: 50%;
+    border-radius: 100%;
     max-width: 180px;
     box-shadow: 0 0 0 0 ${THEME.COLORS.PRIMARY};
     transform: scale(1);
