@@ -1,9 +1,9 @@
-import GlobalStyle from './styles/global';
-import Header from './components/Header'
-import Footer from './components/Footer';
+import GlobalStyle from './src/styles/global';
+import Header from './src/components/Header'
+import Footer from './src/components/Footer';
 import {BrowserRouter} from 'react-router-dom';
-import AppRoutes from './routes';
-import ScrollToTop from './routes/scrollTop';
+import AppRoutes from './src/routes';
+import ScrollToTop from './src/routes/scrollTop';
 
 function App() {
   return (
