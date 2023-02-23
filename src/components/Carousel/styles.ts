@@ -66,8 +66,7 @@ export const Container = styled.div`
     }
 
     @media (max-height: 600px) {
-        grid-template-columns: repeat(3, 0.2fr);
-
+        grid-template-columns: repeat(5, 0.2fr);
         svg {
             width: 40px;
             animation: ${caroseul} 2s linear;
