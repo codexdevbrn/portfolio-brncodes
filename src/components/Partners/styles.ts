@@ -8,8 +8,21 @@ export const Container = styled.div`
     justify-items: center;
     justify-content: center;
 
+    ul {
+        padding-inline-start: 0px;
+    }
     @media (max-width: 500px){
         flex-direction: column;
+        grid-template-columns: repeat(2, 0.2fr);
+        
+        ul {
+            +ul{ padding-inline-start: 0px;}
+        }
+    }
+
+    @media (max-width: 500px){
+        flex-direction: column;
+        grid-template-columns: repeat(1, 0.2fr);
     }
 `;
     export const ListContainer = styled.li`

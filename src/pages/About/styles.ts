@@ -50,6 +50,7 @@ export const PartContainer = styled.div`
     height: auto;
     border-radius: 10px;
     width: 80%;
+    height: auto;
     margin: 30px 0px 60px 0px;
     padding-bottom: 50px;
     position: relative;
@@ -57,24 +58,20 @@ export const PartContainer = styled.div`
     justify-content: center;
     justify-items: center;
     box-shadow: 0 5px 3px rgba(0,0,0, 1);
-    align-items: center;
 
     @media (max-width: 700px) {
         display: grid;
-        grid-template-columns: repeat(2, 0.2fr);
+        width: auto;
     }
 
     @media (max-width: 500px) {
         flex-direction: column;
-        grid-template-columns: repeat(2, 0.2fr);
     }
 `;
 
 export const PartTitle = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
     animation: ${opacity} 1s;
 
     @media (max-width: 700px) {
