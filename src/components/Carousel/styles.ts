@@ -12,20 +12,14 @@ export const Container = styled.div`
     flex-flow: row wrap;
     height: auto;
     margin: 30px 0px 20px 0px;
-    padding-right: 40px;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     justify-items: center;
     box-shadow: 0 5px 3px rgba(0,0,0, 1);
     animation: ${backgroundCard} 0.85s ease normal;
     transition: all ease-in-out 0.25s;
-
-    li{
-        + li{
-            margin-left: 50px;
-        }
-    }
+    
 
     svg {
         width: 60px;
@@ -35,12 +29,18 @@ export const Container = styled.div`
     @media (max-width: 1050px) { 
         display: grid;
         grid-template-columns: repeat(5, 0.2fr);
+        justify-content: space-around;
+
+        ul {
+        padding-inline-start: 0px;
+    }
+
         svg {
             animation: ${caroseul} 5s linear;
         }
     }
 
-    @media (max-width: 600px) { 
+    @media (max-width: 800px) { 
         grid-template-columns: repeat(3, 0.2fr);
         svg {
             width: 40px;
@@ -61,15 +61,17 @@ export const Container = styled.div`
     @media (max-width: 200px) {
         grid-template-columns: repeat(1, 0.2fr);
         svg {
-            animation: ${caroseul} 2s linear;
+            animation: ${caroseul} 5s linear;
         }
     }
 
-    @media (max-height: 600px) {
+    @media (max-height: 500px) {
         grid-template-columns: repeat(5, 0.2fr);
+        height: 60vh;
         svg {
-            width: 40px;
-            animation: ${caroseul} 2s linear;
+            width: 60px;
+            height: 40px;
+            animation: ${caroseul} 5s linear;
         }
     }
 

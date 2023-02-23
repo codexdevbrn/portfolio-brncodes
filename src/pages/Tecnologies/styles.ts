@@ -11,8 +11,4 @@ export const Container = styled(motion.div)`
     width: 100%;
     position: relative;
     padding-top: 60px;
-
-    @media (max-height: 600px) {
-        padding-bottom: 60px;
-    }
 `;
