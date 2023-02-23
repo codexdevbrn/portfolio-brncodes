@@ -6,8 +6,9 @@ export const Container = styled.footer`
   width: 100%;
   height: 5vh;
   bottom: 0;
-  background-color: ${THEME.COLORS.OVERLAY};
+  background: ${THEME.COLORS.OVERLAY};
+  backdrop-filter: blur(2px);
   text-align: center;
   color: ${THEME.COLORS.TEXT};
   padding-top: 10px;
-`
+`;

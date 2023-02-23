@@ -1,7 +1,9 @@
 import { SiTypescript, 
-    SiJavascript, 
+    SiJavascript,
+    SiJava, 
     SiNodedotjs, 
-    SiMysql, 
+    SiMysql,
+    SiMongodb, 
     SiHtml5, 
     SiCss3,
     SiRedux,
@@ -30,34 +32,45 @@ export const Techs =  [
         },
         {   
             "id": 5,
+            "name": "MongoDB",
+            "color": "#388E3C"
+        },
+        {   
+            "id": 6,
             "name": "HTML",
             "color": "#E65100"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "CSS",
             "color": "#0277BD"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Redux",
             "color": "#764ABC"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Docker",
             "color": "#003F8C"
         },
-        
+        {
+            "id": 10,
+            "name": "Java",
+            "color": "#0277BD"
+        },       
     ];
-
+    
     export const Images = [
         SiTypescript,
         SiJavascript,
         SiNodedotjs,
         SiMysql,
+        SiMongodb,
         SiHtml5,
         SiCss3,
         SiRedux,
         SiDocker,
+        SiJava,
     ]
