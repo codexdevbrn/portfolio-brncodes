@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const gitToken = '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'
+const gitToken = process.env.REACT_APP_AUTH_KEY
 
 const api =  axios.create({
     baseURL: 'https://api.github.com/',

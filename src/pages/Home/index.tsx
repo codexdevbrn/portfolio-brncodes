@@ -8,8 +8,8 @@ import {Container,
     Stats, 
     Bio, 
     Adjust} from './styles';
-import {TiLocationOutline, TiMail} from 'react-icons/ti'
 
+import {TiLocationOutline, TiMail} from 'react-icons/ti'
 import SocialButton from '../../components/SocialButton';
 
 import api from '../../service/api';
@@ -42,13 +42,12 @@ function Home() {
         key='home'
         initial={{width: 0}} 
         animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, transition: {duration: 0.5, ease: "circIn"}}}>
+        exit={{x: window.innerWidth, transition: {duration: 0.5}}}>
             <Adjust>
             <Photo src={response?.avatar_url}></Photo>
             <Name>{response?.name}</Name>
             </Adjust>
             <Bio>{response?.bio}</Bio>
-            
             <div>
                 <TiLocationOutline color='#FAC409' size={20} />
                 <Stats>{response?.location}</Stats>

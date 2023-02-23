@@ -9,52 +9,50 @@ export const Container = styled.div`
     height: auto;
     border-radius: 10px;
     width: 80%;
+    flex-flow: row wrap;
+    height: auto;
     margin: 30px 0px 20px 0px;
-    padding-right: 40px;
+    padding: 10px 0px 10px 0px;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     justify-items: center;
-    box-shadow: 0 5px 2px rgba(0,0,0, .1);
+    box-shadow: 0 5px 3px rgba(0,0,0, 1);
     animation: ${backgroundCard} 0.85s ease normal;
     transition: all ease-in-out 0.25s;
-
-    li {
-        + li{
-            margin-left: 50px;
-        }
-    }
 
     svg {
         width: 60px;
         height: 50px;
     }
 
-    @media (max-width: 1000px) { 
+    @media (max-width: 1050px) { 
         display: grid;
-        grid-template-columns: repeat(4, 0.2fr);
+        grid-template-columns: repeat(5, 0.2fr);
+        justify-content: space-around;
+
+        ul {
+        padding-inline-start: 0px;
+    }
 
         svg {
             animation: ${caroseul} 5s linear;
         }
     }
 
-    @media (max-width: 500px) { 
+    @media (max-width: 800px) { 
         grid-template-columns: repeat(3, 0.2fr);
-
         svg {
             width: 40px;
             height: 60px;
             animation: ${caroseul} 5s linear;
         }
-     
         p {
             font-size: 16px;
         }
     }        
     @media (max-width: 400px) {
         grid-template-columns: repeat(2, 0.2fr);
-
         svg {
             animation: ${caroseul} 5s linear;
         }
@@ -63,15 +61,17 @@ export const Container = styled.div`
     @media (max-width: 200px) {
         grid-template-columns: repeat(1, 0.2fr);
         svg {
-            animation: ${caroseul} 2s linear;
+            animation: ${caroseul} 5s linear;
         }
     }
 
     @media (max-height: 600px) {
-        grid-template-columns: repeat(4, 0.2fr);
+        grid-template-columns: repeat(5, 0.2fr);
+
         svg {
-            width: 40px;
-            animation: ${caroseul} 2s linear;
+            width: 60px;
+            height: 40px;
+            animation: ${caroseul} 5s linear;
         }
     }
 
@@ -87,5 +87,5 @@ export const ListContainer = styled.li`
     justify-content: center;
     display: flex;
     font-weight: bold;
-    animation: ${caroseul} 5s linear;
+    animation: ${caroseul} 3s linear;
 `;
