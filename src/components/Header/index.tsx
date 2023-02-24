@@ -6,8 +6,8 @@ function Header(){
     const navRef = useRef<HTMLDivElement>(null);
 
     const showNavbar = () => {
-        navRef.current?.classList.toggle('responsive');
-    }
+        return navRef.current?.classList.toggle('responsive');
+   }
     return (
         <>
     <Container>

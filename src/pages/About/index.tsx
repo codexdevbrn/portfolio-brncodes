@@ -21,7 +21,7 @@ function About() {
 
                         <Text>Possuo conhecimento com desenvolvimento back-end utilizando stacks Javascript e Java.</Text>
                         
-                        <Text>Domino ferramentas como Figma, Photoshop e Illustrator, e nas horas vagas sou designer gráfico na empresa do meu amigo.</Text>
+                        <Text>Domino ferramentas como Figma, Photoshop e Illustrator, e nas horas vagas sou designer gráfico freelancer</Text>
                         
                         <Text>Trabalho a mais de 6 anos como Administrador de Banco de Dados MySql e estou em busca desafios que me proporcione aprendizado 
                         constante e a possibilidade de criar aplicações com qualidade.</Text>
