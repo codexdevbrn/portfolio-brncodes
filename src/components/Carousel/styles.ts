@@ -12,14 +12,20 @@ export const Container = styled.div`
     flex-flow: row wrap;
     height: auto;
     margin: 30px 0px 20px 0px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 20px 10px 20px;
     position: relative;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     justify-items: center;
     box-shadow: 0 5px 3px rgba(0,0,0, 1);
     animation: ${backgroundCard} 0.85s ease normal;
     transition: all ease-in-out 0.25s;
+
+    ul {
+        & + ul {
+            padding-left: 30px;
+        }
+    }
 
     svg {
         width: 60px;
@@ -39,7 +45,6 @@ export const Container = styled.div`
             animation: ${caroseul} 5s linear;
         }
     }
-
     @media (max-width: 800px) { 
         grid-template-columns: repeat(3, 0.2fr);
         svg {
@@ -60,6 +65,13 @@ export const Container = styled.div`
     }
     @media (max-width: 200px) {
         grid-template-columns: repeat(1, 0.2fr);
+
+        ul {
+        & + ul {
+            padding-left: 0px;
+        }
+    }
+
         svg {
             animation: ${caroseul} 5s linear;
         }
@@ -74,7 +86,6 @@ export const Container = styled.div`
             animation: ${caroseul} 5s linear;
         }
     }
-
 `;
 
 export const ListContainer = styled.li`

@@ -19,5 +19,9 @@ const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    ul {
+        padding-inline-start: 0px;
+    }
 `;
 export default GlobalStyle;
