@@ -1,0 +1,14 @@
+on: push:
+  branches: 
+    - gh-pages
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    env: 
+      REACT_APP_AUTH_KEY: ${{secrets.REACT_APP_AUTH_KEY}}
+     
