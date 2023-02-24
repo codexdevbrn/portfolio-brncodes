@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://codexdevbrn.github.io/portfolio-brncodes/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
