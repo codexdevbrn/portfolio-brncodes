@@ -24,7 +24,7 @@ function About() {
                         <Text>Domino ferramentas como Figma, Photoshop e Illustrator, e nas horas vagas sou designer gráfico na empresa do meu amigo.</Text>
                         
                         <Text>Trabalho a mais de 6 anos como Administrador de Banco de Dados MySql e estou em busca desafios que me proporcione aprendizado 
-                        constante e a possibilidade de criar aplicaçõe com qualidade.</Text>
+                        constante e a possibilidade de criar aplicações com qualidade.</Text>
                     </TextContainer>
 
                     <PartTitle>Parceiros que confiam no meu trabalho:</PartTitle>
