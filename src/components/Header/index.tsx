@@ -29,7 +29,7 @@ function Header(){
         <>
     <Container>
         <Navbar ref={navRef}>
-            <Buttons to="/">Home</Buttons>
+            <Buttons to="/">Início</Buttons>
             <Buttons to="techs">Tecnologias</Buttons>
             <Buttons to="about">Sobre</Buttons>
         <ButtonResp className='close-btn' onClick={showNavbar}>
