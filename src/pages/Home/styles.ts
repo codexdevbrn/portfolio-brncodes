@@ -18,13 +18,40 @@ export const Container = styled(motion.div)`
         align-content: center;
         align-items: center;
         justify-content: center;
+
+        span {
+            color: ${THEME.COLORS.PRIMARY};
+            font-size: 16px;
+            margin-left: 5px ;
+            text-align: center;
+            font-weight: lighter;
+        }
+        a {
+            color: ${THEME.COLORS.PRIMARY};
+            font-size: 16px;
+            margin-left: 5px ;
+            text-align: center;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+        @media (max-height: 700px) {
+            font-size: 12px;
+        }
+
     }
+       
+    
     @media (max-width: 500px) {
         h1{
             font-size: 30px;
         }
         h2 {
             font-size: 16px;
+        }
+        a span {
+    @media (max-height: 700px) {
+        font-size: 12px;
+    }
         }
     }
 
@@ -135,10 +162,9 @@ export const Stats = styled.span`
  font-weight: lighter;
 
  @media (max-height: 700px) {
-    @media (max-height: 700px) {
         font-size: 12px;
     }
-}
+
 `;
 
 export const ButtContainer = styled.div`

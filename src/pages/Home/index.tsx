@@ -50,11 +50,11 @@ function Home() {
             <Bio>{response?.bio}</Bio>
             <div>
                 <TiLocationOutline color='#FAC409' size={20} />
-                <Stats>{response?.location}</Stats>
+                <span>{response?.location}</span>
             </div>
             <div>
                 <TiMail color='#FAC409' size={20} />
-                <Stats>{response?.email}</Stats>
+                <a href="mailto:brunoduarte.inf@outlook.com">{response?.email}</a>
             </div>   
              <ButtContainer>
              <Bio>Social:</Bio>
