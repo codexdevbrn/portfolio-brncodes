@@ -1,6 +1,5 @@
 import { SiTypescript, 
     SiJavascript,
-    SiJava, 
     SiNodedotjs, 
     SiMysql,
     SiMongodb, 
@@ -8,6 +7,8 @@ import { SiTypescript,
     SiCss3,
     SiRedux,
     SiDocker} from 'react-icons/si';
+
+import {DiJava} from 'react-icons/di';
 
 export const Techs =  [
         {   
@@ -72,5 +73,5 @@ export const Techs =  [
         SiCss3,
         SiRedux,
         SiDocker,
-        SiJava,
+        DiJava,
     ]
