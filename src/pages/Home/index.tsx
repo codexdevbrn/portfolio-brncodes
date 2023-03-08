@@ -4,8 +4,7 @@ import { GithubTypes } from '../../@types/GithubTypes';
 import {Container, 
     ButtContainer, 
     Name, 
-    Photo, 
-    Stats, 
+    Photo,
     Bio, 
     Adjust} from './styles';
 

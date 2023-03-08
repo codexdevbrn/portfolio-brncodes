@@ -154,19 +154,6 @@ export const Bio = styled.h2`
     }
 `;
 
-export const Stats = styled.span`
- color: ${THEME.COLORS.PRIMARY};
- font-size: 16px;
- margin-left: 5px ;
- text-align: center;
- font-weight: lighter;
-
- @media (max-height: 700px) {
-        font-size: 12px;
-    }
-
-`;
-
 export const ButtContainer = styled.div`
     display: flex;
     animation: ${slide} 1s linear;
