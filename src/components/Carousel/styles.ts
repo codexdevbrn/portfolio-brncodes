@@ -8,12 +8,11 @@ export const Container = styled.div`
     background-size: 400% 400%;
     width: 80%;
     height: auto;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     flex-flow: row wrap;
     margin: 30px 0px 20px 0px;
-    padding: 10px 20px 10px 20px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -93,7 +92,6 @@ export const ListContainer = styled.li`
     list-style: none;
     position: relative;
     flex-direction: column;
-    margin-top: 10px;
     align-content: center;
     align-items: center;
     justify-content: center;
