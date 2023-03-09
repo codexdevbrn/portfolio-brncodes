@@ -8,7 +8,7 @@ export const Container = styled(motion.div)`
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
     position: relative;
     padding-top: 60px;
+    box-sizing: border-box;
 `;

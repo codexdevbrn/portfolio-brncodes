@@ -6,11 +6,12 @@ export const Container = styled.div`
     display: flex;
     background: linear-gradient(180deg, ${THEME.COLORS.OVERLAY},${THEME.COLORS.PRIMARY},${THEME.COLORS.OVERLAY});
     background-size: 400% 400%;
-    height: auto;
-    border-radius: 10px;
     width: 80%;
-    flex-flow: row wrap;
     height: auto;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-flow: row wrap;
     margin: 30px 0px 20px 0px;
     padding: 10px 20px 10px 20px;
     position: relative;

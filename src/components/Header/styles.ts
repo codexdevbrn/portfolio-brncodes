@@ -41,6 +41,7 @@ export const Buttons = styled(NavLink)`
 export const Navbar = styled.nav`
     display: flex;
     align-items: center;
+    
     @media (max-width: 1024px) {
        position: fixed;
        top: -100vh;

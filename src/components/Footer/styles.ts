@@ -12,4 +12,5 @@ export const Container = styled.footer`
   text-align: center;
   color: ${THEME.COLORS.TEXT};
   padding-top: 10px;
+  box-sizing: border-box;
 `;

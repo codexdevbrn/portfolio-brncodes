@@ -1,7 +1,7 @@
 import { BoxTitle, Title } from './styles';
 
 interface TitleProps {
-item: string;
+    item: string;
 }
 
 function Titles({item}: TitleProps){

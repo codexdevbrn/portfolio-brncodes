@@ -9,8 +9,11 @@ export const Container = styled(motion.div)`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
     position: relative;
 
     > div {
@@ -139,8 +142,6 @@ export const Bio = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
     letter-spacing: 2px;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
     animation: ${opacity} 1s;
 
     @media (max-height: 700px) {
@@ -157,7 +158,7 @@ export const Bio = styled.h2`
 export const ButtContainer = styled.div`
     display: flex;
     animation: ${slide} 1s linear;
-    margin-top: 20px;
+    margin-top: 30px;
     align-content: center;
     align-items: center;
     justify-content: center;
