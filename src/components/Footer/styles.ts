@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { THEME } from "../../theme";
 
 export const Container = styled.footer`
-  position: relative;
+  position: fixed;
   z-index: 1;
   width: 100%;
   height: 5%;
