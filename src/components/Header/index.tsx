@@ -33,7 +33,10 @@ function Header(){
             <Buttons to="techs">Tecnologias</Buttons>
             <Buttons to="about">Sobre</Buttons>
         <ButtonResp className='close-btn' onClick={showNavbar}>
-            <TiArrowMinimise color={THEME.COLORS.PRIMARY} size={30}/>
+            <TiArrowMinimise 
+            color={THEME.COLORS.PRIMARY} 
+            size={30}
+            />
         </ButtonResp>
         </Navbar>
         <ButtonResp id='open' className='open-btn' onClick={showNavbar}>

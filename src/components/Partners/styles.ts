@@ -43,16 +43,16 @@ export const ListContainer = styled.li`
     
     p {
         letter-spacing: 3px;
-        width: 90%;
+        width: 95%;
+        padding-top: 1vh;
         align-items: center;
-    }
-    @media (max-width: 700px) {
-        img{
-            width: 90px;
-        }
     }
     `;
 
 export const Images = styled.img`
     width: 180px;
+
+    @media (max-width: 700px) {
+        width: 90px;
+    }
 `;

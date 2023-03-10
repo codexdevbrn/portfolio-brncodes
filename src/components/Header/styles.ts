@@ -8,8 +8,8 @@ export const Container = styled.header`
     z-index: 1;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    width: 100%;
+    height: 5vh;
+    width: 100vw;
 
     flex-direction: row;
     background-color: ${THEME.COLORS.SHAPE};
@@ -17,7 +17,6 @@ export const Container = styled.header`
     .responsive {
         transform: translateY(100vh);
     }
-
     .close-btn {
         position: absolute;
 		top: 2rem;
@@ -41,12 +40,12 @@ export const Buttons = styled(NavLink)`
 export const Navbar = styled.nav`
     display: flex;
     align-items: center;
-    
+
     @media (max-width: 1024px) {
        position: fixed;
        top: -100vh;
        right: 0;
-       height: 100%;
+       height: 100vh;
        width: 50%;
        flex-direction: column;
        align-items: center;
@@ -60,12 +59,16 @@ export const Navbar = styled.nav`
 `;
 
 export const ButtonResp = styled.button`
-    padding: 5px;
+    padding: auto;
     background-color: transparent;
     border: none;
     outline: none;
     visibility: hidden;
     opacity: 0;
+
+    svg {
+        margin-right: 2.5vw;
+    }
 
     @media (max-width: 1024px) {
         visibility: visible;

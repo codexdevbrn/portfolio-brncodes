@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${THEME.COLORS.TEXT};
     }
     body {
-        height: 100%;
+        height: 100vh;
         background: ${THEME.COLORS.BACKGROUND_900};
         font: 14px 'Ubuntu', sans-serif;
         scrollbar-width: none;

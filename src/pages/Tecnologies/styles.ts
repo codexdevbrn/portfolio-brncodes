@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 export const Container = styled(motion.div)`
     display: flex;
     align-content: center;
-    justify-content: first baseline;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 10vh;
+    box-sizing: border-box;
     height: 100vh;
     position: relative;
-    padding-top: 60px;
-    box-sizing: border-box;
 `;

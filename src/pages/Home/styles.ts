@@ -9,11 +9,9 @@ export const Container = styled(motion.div)`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
     position: relative;
-    padding-top: 10%;
 
     > div {
         display: flex;
@@ -129,7 +127,7 @@ export const Photo = styled.img`
     @media (max-width: 800px){
         max-width: 140px;
     }
-    @media (max-width: 400px){
+    @media (max-width: 500px){
         max-width: 120px;
     }
 
