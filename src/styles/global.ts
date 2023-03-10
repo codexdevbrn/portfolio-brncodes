@@ -2,13 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 import {THEME} from '../theme';
 
 const GlobalStyle = createGlobalStyle`
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
     p {
         color: ${THEME.COLORS.TEXT};
     }
     body {
         height: 100%;
-        margin: 0;
-        padding: 0;
         background: ${THEME.COLORS.BACKGROUND_900};
         font: 14px 'Ubuntu', sans-serif;
         scrollbar-width: none;

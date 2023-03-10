@@ -8,24 +8,18 @@ export const Container = styled.div`
     background-size: 400% 400%;
     width: 80%;
     height: auto;
-    padding: 10px 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     flex-flow: row wrap;
     margin: 30px 0px 20px 0px;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     justify-items: center;
     box-shadow: 0 5px 3px rgba(0,0,0, 1);
     animation: ${backgroundCard} 0.85s ease normal;
     transition: all ease-in-out 0.25s;
-
-    ul {
-        & + ul {
-            padding-left: 30px;
-        }
-    }
 
     svg {
         width: 60px;
@@ -97,5 +91,6 @@ export const ListContainer = styled.li`
     justify-content: center;
     display: flex;
     font-weight: bold;
+    padding-top: 10px;
     animation: ${caroseul} 3s linear;
 `;

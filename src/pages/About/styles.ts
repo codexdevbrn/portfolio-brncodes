@@ -21,6 +21,7 @@ export const TextContainer = styled.div`
     height: auto;
     border-radius: 10px;
     width: 80%;
+    margin-top: 10px;
     padding-bottom: 100px;
     box-sizing: border-box;
     position: relative;

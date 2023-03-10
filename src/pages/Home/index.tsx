@@ -6,7 +6,8 @@ import {Container,
     Name, 
     Photo,
     Bio, 
-    Adjust} from './styles';
+    Adjust,
+    More} from './styles';
 
 import {TiLocationOutline, TiMail} from 'react-icons/ti'
 import SocialButton from '../../components/SocialButton';
@@ -47,16 +48,16 @@ function Home() {
             <Name>{response?.name}</Name>
             </Adjust>
             <Bio>{response?.bio}</Bio>
-            <div>
+            <More>
                 <TiLocationOutline color='#FAC409' size={20} />
                 <span>{response?.location}</span>
-            </div>
-            <div>
+            </More>
+            <More>
                 <TiMail color='#FAC409' size={20} />
                 <a href="mailto:brunoduarte.inf@outlook.com">{response?.email}</a>
-            </div>   
+            </More>   
              <ButtContainer>
-             <Bio>Social:</Bio>
+             <h2>Social:</h2>
             {SocialProps.map((social, idx) => {
                 return(
                     <SocialButton 

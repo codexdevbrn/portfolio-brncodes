@@ -3,7 +3,7 @@ import { Container } from './styles';
 function Footer(){
     return(
         <Container>
-            <span>Desenvolvido por Bruno Duarte</span>
+            <p>Desenvolvido por Bruno Duarte</p>
         </Container>
 
     );

@@ -7,6 +7,7 @@ export const Container = styled.div`
     align-items: center;
     justify-items: center;
     justify-content: center;
+    
 
     ul {
         padding-inline-start: 0px;
@@ -38,6 +39,7 @@ export const ListContainer = styled.li`
     display: flex;
     font-weight: bold;
     animation: ${caroseul} 3s linear;
+    padding: 20px 40px;
     
     p {
         letter-spacing: 3px;

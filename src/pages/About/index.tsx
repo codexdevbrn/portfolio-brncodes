@@ -14,7 +14,7 @@ function About() {
                     transition: {duration: 0.5, ease: "circIn"}}}>
                 <Titles item={title}/>
                     <TextContainer>
-                    <Text>Apaixonado por tecnologia e inovações, comecei a trabalhar com nesse segmento aos 14 anos em uma loja de informática, 
+                    <Text>Apaixonado por tecnologia e inovações, comecei a trabalhar com esse segmento aos 14 anos em uma loja de informática, 
                         meu trabalho era garantir todo e qualquer tipo de manutenção e lá foi o início do meu aprendizado. </Text> 
 
                     <Text>Me formei em 2020 como Analista de Sistemas pela Universidade Unigranrio, que tinha como base de estudos ecossistema Java. </Text> 
