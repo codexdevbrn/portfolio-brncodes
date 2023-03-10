@@ -8,9 +8,13 @@ export const Container = styled.footer`
   height: 5%;
   bottom: 0;
   text-align: center;
-  justify-content: space-around;
   background: ${THEME.COLORS.OVERLAY};
   backdrop-filter: blur(2px);
   color: ${THEME.COLORS.TEXT};
   padding: 10px;
+  box-sizing: border-box;
+
+  @media (max-height: 400px){
+    padding-top: 0px;
+  }
 `;
