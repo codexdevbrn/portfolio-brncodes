@@ -5,10 +5,11 @@ import { THEME } from '../../theme';
 export const Container = styled.header`
     display: flex;
     position: fixed;
+    grid-area: header;
     z-index: 1;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+   
     width: 100vw;
 
     flex-direction: row;

@@ -4,15 +4,16 @@ import { THEME } from '../../theme'
 import { pulse, slide, opacity } from '../../styles/keyframes';
 
 export const Container = styled(motion.div)`
-    display: flex;
+    grid-area: main;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+    padding-top: 20vh;
+    box-sizing: border-box;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    position: relative;
-
+   
     > div {
         display: flex;
         align-content: center;
@@ -63,10 +64,6 @@ export const Container = styled(motion.div)`
     }
 
     @media (max-width: 300px) {
-        img {
-            width: 100px;
-            transition: all 0.10s ;
-        }
         h1 {
             font-size: 16px;
         }
@@ -79,19 +76,16 @@ export const Container = styled(motion.div)`
         }
         svg {
             width: 40px;
+        }
     }
-    }
-
-    @media (max-height: 1000px){
-        padding-bottom: 5%;
-    }
-
-
 `;
 export const Adjust = styled.div`
     display: flex;
     position: relative;
     flex-direction: column;
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
 
     @media (max-width: 500px){
         padding-top: 15%;
@@ -99,16 +93,15 @@ export const Adjust = styled.div`
 
     @media (max-height: 900px) {
         flex-direction: row;
-        align-items: center;
-        justify-items: center;
-        justify-content: center;  
+        
     }
 `;
 export const More = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 0.25%;
+    box-sizing: border-box;
     font-size: auto;
+    margin-top: 20px;
 
     @media (max-height: 700px) {
         font-size: 16px;
@@ -120,31 +113,29 @@ export const Photo = styled.img`
     box-shadow: 0 0 0 0 ${THEME.COLORS.PRIMARY};
     transform: scale(1);
     animation: ${pulse} 2s backwards;
-    margin-top: 10%;
 
     @media (max-width: 800px){
         max-width: 140px;
     }
     @media (max-width: 500px){
         max-width: 120px;
-    }
+    } 
 
-    @media (max-height: 500px) {
-       max-width: 100px;
-    }
 `;
 export const Name = styled.h1`
     color: ${THEME.COLORS.TEXT};
     letter-spacing: 2px;
-    text-align: center;
     margin-top: 30px;
+    padding: 0px 50px;
     box-sizing: border-box;
+    text-align: center;
     font-size: 40px;
     animation: ${opacity} 1s;
 
-    @media (max-height: 900px) {
-        margin-left: 20px;
+    @media (max-width: 500px){
+        padding: 0px 25px;
     }
+   
 `;
 export const Bio = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
@@ -153,6 +144,7 @@ export const Bio = styled.h2`
     animation: ${opacity} 1s;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 25px;
 
     @media (max-height: 700px) {
         font-size: 20px;
@@ -161,8 +153,10 @@ export const Bio = styled.h2`
 export const ButtContainer = styled.div`
     display: flex;
     animation: ${slide} 1s linear;
-    margin-top: 30px;
     align-content: center;
+    box-sizing: border-box;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
     align-items: center;
     justify-content: center;
 
@@ -173,7 +167,7 @@ export const ButtContainer = styled.div`
         animation: ${opacity} 1s;
 
         @media (max-height: 700px) {
-        font-size: 20px;
+            font-size: 20px;
         }
     }
 

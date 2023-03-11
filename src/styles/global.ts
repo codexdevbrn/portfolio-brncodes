@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import {THEME} from '../theme';
+import backgrounImage from '../assets/background.png'
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -16,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
         font: 14px 'Ubuntu', sans-serif;
         scrollbar-width: none;
         overflow-y: scroll;
+        display: grid;
+        grid-template-areas:
+        'header'
+        'main'
+        'footer'; 
     }
     body::-webkit-scrollbar {
         display: none;

@@ -3,9 +3,9 @@ import { THEME } from "../../theme";
 
 export const Container = styled.footer`
   position: fixed;
-  z-index: 1;
+  grid-area: footer;
   width: 100vw;
-  height: 5vh;
+  z-index: 1;
   bottom: 0;
   text-align: center;
   background: ${THEME.COLORS.OVERLAY};
