@@ -14,7 +14,6 @@ export const Container = styled(motion.div)`
     padding-bottom: 10vh;
     position: relative;
 `;
-
 export const TextContainer = styled.div`
     display: flex;
     background: ${THEME.COLORS.FOOTER};
@@ -40,14 +39,12 @@ export const Text = styled.p`
     font-weight: 500;
     animation: ${opacity} 3s ease-in-out;
 `;
-
 export const PartContainer = styled.div`
     display: flex;
     background: ${THEME.COLORS.FOOTER};
-    height: auto;
     border-radius: 10px;
     width: 80%;
-    height: 90%;
+    height: auto;
     margin-top: 10px;
     position: relative;
     align-items: center;
@@ -57,7 +54,6 @@ export const PartContainer = styled.div`
 
     @media (max-width: 700px) {
         display: grid;
-        width: auto;
         width: 80%;
     }
 
@@ -65,7 +61,6 @@ export const PartContainer = styled.div`
         flex-direction: column;
     }
 `;
-
 export const PartTitle = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
     text-align: center;

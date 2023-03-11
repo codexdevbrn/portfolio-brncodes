@@ -29,14 +29,12 @@ export const Container = styled.header`
     }
 
 `;
-
 export const Buttons = styled(NavLink)`
     color: ${THEME.COLORS.TEXT};
     text-decoration: none;
     font-size: 20px;
     margin: 0.95rem;
 `;
-
 export const Navbar = styled.nav`
     display: flex;
     align-items: center;
@@ -57,7 +55,6 @@ export const Navbar = styled.nav`
         
     }
 `;
-
 export const ButtonResp = styled.button`
     padding: auto;
     background-color: transparent;

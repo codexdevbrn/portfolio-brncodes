@@ -30,7 +30,6 @@ export const BoxTitle = styled.div`
         padding: 0px;
     }
 `; 
-
 export const Title = styled.h1`
     position: relative;
     color: ${THEME.COLORS.TEXT};

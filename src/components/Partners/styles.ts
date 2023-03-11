@@ -47,8 +47,7 @@ export const ListContainer = styled.li`
         padding-top: 1vh;
         align-items: center;
     }
-    `;
-
+`;
 export const Images = styled.img`
     width: 180px;
 

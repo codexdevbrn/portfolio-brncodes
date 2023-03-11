@@ -104,7 +104,6 @@ export const Adjust = styled.div`
         justify-content: center;  
     }
 `;
-
 export const More = styled.div`
     display: flex;
     flex-direction: row;
@@ -115,7 +114,6 @@ export const More = styled.div`
         font-size: 16px;
     }
 `;
-
 export const Photo = styled.img`
     border-radius: 100%;
     max-width: 180px;
@@ -135,7 +133,6 @@ export const Photo = styled.img`
        max-width: 100px;
     }
 `;
-
 export const Name = styled.h1`
     color: ${THEME.COLORS.TEXT};
     letter-spacing: 2px;
@@ -149,7 +146,6 @@ export const Name = styled.h1`
         margin-left: 20px;
     }
 `;
-
 export const Bio = styled.h2`
     color: ${THEME.COLORS.CAPTION_400};
     letter-spacing: 2px;
@@ -162,7 +158,6 @@ export const Bio = styled.h2`
         font-size: 20px;
     }
 `;
-
 export const ButtContainer = styled.div`
     display: flex;
     animation: ${slide} 1s linear;
