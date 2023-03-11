@@ -17,7 +17,7 @@ export const Container = styled(motion.div)`
 `;
 export const TextContainer = styled.div`
     display: flex;
-    background: ${THEME.COLORS.FOOTER};
+    background: ${THEME.COLORS.OVERLAY};
     height: auto;
     border-radius: 10px;
     width: 80vw;
@@ -42,11 +42,10 @@ export const Text = styled.p`
 `;
 export const PartContainer = styled.div`
     display: flex;
-    background: ${THEME.COLORS.FOOTER};
+    background: ${THEME.COLORS.OVERLAY};
     border-radius: 10px;
     width: 80%;
     height: auto;
-    margin-top: 10px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -68,7 +67,7 @@ export const PartTitle = styled.h2`
     animation: ${opacity} 1s;
     width: 100%;
     height: 40%;
-    padding: 30px 0px;
+    padding: 20px 0px;
     box-sizing: border-box;
 
     @media (max-width: 700px) {

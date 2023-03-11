@@ -22,61 +22,24 @@ export const Container = styled(motion.div)`
 
         span {
             color: ${THEME.COLORS.PRIMARY};
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 600;
             margin-left: 5px ;
             text-align: center;
-            font-weight: lighter;
+            
         }
         a {
             color: ${THEME.COLORS.PRIMARY};
-            font-size: 16px;
+            font-size: 18px;
             margin-left: 5px ;
             text-align: center;
-            font-weight: lighter;
+            font-weight: 600;
             text-decoration: none;
         }
         @media (max-height: 700px) {
             font-size: 12px;
         }
 
-    }
-       
-    @media (max-width: 500px) {
-        h1{
-            font-size: 30px;
-        }
-        h2 {
-            font-size: 16px;
-        } 
-    }
-   
-    @media (max-width: 400px) {
-        img {
-            width: 150px;
-            transition: all 0.10s ;
-        }
-        h1 {
-            font-size: 20px;
-        }
-        h2 {
-            font-size: 15px;
-        }
-    }
-
-    @media (max-width: 300px) {
-        h1 {
-            font-size: 16px;
-        }
-        h2 {
-            font-size: 16px;
-        }
-        span {
-            font-size: 10px;
-            margin-left: -5px;
-        }
-        svg {
-            width: 40px;
-        }
     }
 `;
 export const Adjust = styled.div`
@@ -100,7 +63,6 @@ export const More = styled.div`
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    font-size: auto;
     margin-top: 20px;
 
     @media (max-height: 700px) {
@@ -134,6 +96,15 @@ export const Name = styled.h1`
 
     @media (max-width: 500px){
         padding: 0px 25px;
+        font-size: 30px;
+    }
+   
+    @media (max-width: 400px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 16px;
     }
    
 `;
@@ -145,10 +116,24 @@ export const Bio = styled.h2`
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 25px;
+    font-weight: 700;
 
-    @media (max-height: 700px) {
+    @media (max-width: 700px) {
+        font-size: 25px;
+    }
+
+    @media (max-width: 500px) {
         font-size: 20px;
     }
+
+    @media (max-width: 400px) {
+        font-size: 15px; 
+    }
+
+    @media (max-height: 700px) {
+        font-size: 15px;
+    }
+
 `;
 export const ButtContainer = styled.div`
     display: flex;
@@ -169,6 +154,23 @@ export const ButtContainer = styled.div`
         @media (max-height: 700px) {
             font-size: 20px;
         }
+
+        @media (max-width: 700px) {
+        font-size: 25px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 15px; 
+        }
+
+        @media (max-height: 700px) {
+            font-size: 15px;
+        }
+
     }
 
     @media (max-width: 200px) {

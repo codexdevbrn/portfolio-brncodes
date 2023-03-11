@@ -45,7 +45,7 @@ export const Navbar = styled.nav`
        top: -100vh;
        right: 0;
        height: 100vh;
-       width: 50%;
+       width: 30%;
        flex-direction: column;
        align-items: center;
        justify-content: center;
