@@ -5,6 +5,7 @@ import { opacity } from "../../styles/keyframes";
 
 export const Container = styled(motion.div)`
     display: flex;
+    grid-area: main;
     align-content: center;
     align-items: center;
     justify-content: flex-start;

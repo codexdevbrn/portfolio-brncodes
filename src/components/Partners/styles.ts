@@ -54,4 +54,8 @@ export const Images = styled.img`
     @media (max-width: 700px) {
         width: 90px;
     }
+
+    @media (max-height: 800px) {
+        width: 90px;
+    }
 `;
