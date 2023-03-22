@@ -1,6 +1,6 @@
 import {useEffect, useRef} from 'react';
-import { Container, Buttons, Navbar, ButtonResp} from './styles';
-import {TiThMenu, TiArrowMinimise} from 'react-icons/ti';
+import { Container, Buttons, Navbar, ButtonResp } from './styles';
+import { TiThMenu, TiArrowMinimise } from 'react-icons/ti';
 import { THEME } from '../../theme';
 
 function Header(){
@@ -20,7 +20,7 @@ function Header(){
       }, []);
 
     const showNavbar = () => {
-        if (navRef.current) {
+        if (navRef.current && window.innerWidth < 1024) {
           return navRef.current.classList.toggle('responsive');
         }
     }
@@ -29,18 +29,18 @@ function Header(){
         <>
     <Container>
         <Navbar ref={navRef}>
-            <Buttons to="/">Início</Buttons>
-            <Buttons to="techs">Tecnologias</Buttons>
-            <Buttons to="about">Sobre</Buttons>
+            <Buttons to="/" onClick={showNavbar}>Início</Buttons>
+            <Buttons to="techs" onClick={showNavbar}>Tecnologias</Buttons>
+            <Buttons to="about" onClick={showNavbar}>Sobre</Buttons>
         <ButtonResp className='close-btn' onClick={showNavbar}>
             <TiArrowMinimise 
-            color={THEME.COLORS.PRIMARY} 
+            color={THEME.COLORS.SUCCESS}
             size={30}
             />
         </ButtonResp>
         </Navbar>
         <ButtonResp id='open' className='open-btn' onClick={showNavbar}>
-            <TiThMenu color={THEME.COLORS.PRIMARY} size={30}/>
+            <TiThMenu color={THEME.COLORS.SUCCESS} size={30}/>
         </ButtonResp>
     </Container>
     </>

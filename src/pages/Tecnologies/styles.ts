@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion';
 
-export const Container = styled(motion.div)`
+export const Container = styled(motion.main)`
     grid-area: main;
     display: flex;
     align-content: center;

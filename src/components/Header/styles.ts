@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { THEME } from '../../theme';
+import { darken } from 'polished';
 
 export const Container = styled.header`
     display: flex;
@@ -11,6 +12,7 @@ export const Container = styled.header`
     justify-content: center;
    
     width: 100vw;
+    height: 6vh;
 
     flex-direction: row;
     background-color: ${THEME.COLORS.SHAPE};
@@ -66,6 +68,9 @@ export const ButtonResp = styled.button`
 
     svg {
         margin-right: 2.5vw;
+        background-color: ${darken(0.2, THEME.COLORS.PRIMARY)};
+        border-radius: 10%;
+        
     }
 
     @media (max-width: 1024px) {

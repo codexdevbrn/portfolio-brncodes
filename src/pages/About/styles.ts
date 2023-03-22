@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { THEME } from "../../theme";
 import { opacity } from "../../styles/keyframes";
 
-export const Container = styled(motion.div)`
+export const Container = styled(motion.main)`
     display: flex;
     grid-area: main;
     align-content: center;

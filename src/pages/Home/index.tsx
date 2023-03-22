@@ -14,6 +14,7 @@ import SocialButton from '../../components/SocialButton';
 
 import api from '../../service/api';
 import { SocialProps } from '../../utils/socialMedia';
+import { THEME } from '../../theme';
 
 function Home() {
     const [response, setResponse] = useState(() => {
@@ -49,11 +50,11 @@ function Home() {
             </Adjust>
             <Bio>{response?.bio}</Bio>
             <More>
-                <TiLocationOutline color='#FAC409' size={20} />
+                <TiLocationOutline color={THEME.COLORS.SUCCESS} size={20} />
                 <span>{response?.location}</span>
             </More>
             <More>
-                <TiMail color='#FAC409' size={20} />
+                <TiMail color={THEME.COLORS.SUCCESS} size={20} />
                 <a href="mailto:brunoduarte.inf@outlook.com">{response?.email}</a>
             </More>   
              <ButtContainer>
