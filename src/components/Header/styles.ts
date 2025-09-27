@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { THEME } from '../../theme';
 import { darken } from 'polished';
 
 export const Container = styled.header`
@@ -15,7 +14,7 @@ export const Container = styled.header`
     height: 6vh;
 
     flex-direction: row;
-    background-color: ${THEME.COLORS.SHAPE};
+    background-color: ${({ theme }) => theme.COLORS.SHAPE};
 
     .responsive {
         transform: translateY(100vh);
@@ -33,7 +32,7 @@ export const Container = styled.header`
 
 `;
 export const Buttons = styled(NavLink)`
-    color: ${THEME.COLORS.TEXT};
+    color: ${({ theme }) => theme.COLORS.TEXT};
     text-decoration: none;
     font-size: 20px;
     margin: 0.95rem;
@@ -52,7 +51,7 @@ export const Navbar = styled.nav`
        align-items: center;
        justify-content: center;
        gap: 1.5rem;
-       background-color: ${THEME.COLORS.SHAPE};
+       background-color: ${({ theme }) => theme.COLORS.SHAPE};
        transition: 2s;
        transform: translateY(-100vh);
         
@@ -68,7 +67,7 @@ export const ButtonResp = styled.button`
 
     svg {
         margin-right: 2.5vw;
-        background-color: ${darken(0.2, THEME.COLORS.PRIMARY)};
+        background-color: ${({ theme }) => darken(0.05, theme.COLORS.PRIMARY)};
         border-radius: 10%;
         
     }
@@ -78,4 +77,9 @@ export const ButtonResp = styled.button`
         opacity: 1;
         
     }
+`;
+export const SomeButton = styled.button`
+  color: ${({ theme }) => theme.COLORS.SUCCESS};
+  background: ${({ theme }) => theme.COLORS.PRIMARY};
+  &:hover { background: ${({ theme }) => darken(0.05, theme.COLORS.PRIMARY)}; }
 `;

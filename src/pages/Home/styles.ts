@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { THEME } from '../../theme'
 import { pulse, slide, opacity } from '../../styles/keyframes';
 
 export const Container = styled(motion.main)`
@@ -8,11 +7,12 @@ export const Container = styled(motion.main)`
     align-content: center;
     align-items: center;
     justify-items: center;
-    padding-top: 20vh;
     box-sizing: border-box;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    color: ${({ theme }) => theme.COLORS.TEXT};
    
     > div {
         display: flex;
@@ -21,7 +21,7 @@ export const Container = styled(motion.main)`
         justify-content: center;
 
         span {
-            color: ${THEME.COLORS.PRIMARY};
+            color: ${({ theme }) => theme.COLORS.PRIMARY};
             font-size: 18px;
             font-weight: 600;
             margin-left: 5px ;
@@ -29,7 +29,7 @@ export const Container = styled(motion.main)`
             
         }
         a {
-            color: ${THEME.COLORS.PRIMARY};
+            color: ${({ theme }) => theme.COLORS.PRIMARY};
             font-size: 18px;
             margin-left: 5px ;
             text-align: center;
@@ -72,7 +72,7 @@ export const More = styled.div`
 export const Photo = styled.img`
     border-radius: 100%;
     max-width: 180px;
-    box-shadow: 0 0 0 0 ${THEME.COLORS.PRIMARY};
+    box-shadow: 0 0 0 0 ${({ theme }) => theme.COLORS.PRIMARY};
     transform: scale(1);
     animation: ${pulse} 2s backwards;
 
@@ -85,7 +85,7 @@ export const Photo = styled.img`
 
 `;
 export const Name = styled.h1`
-    color: ${THEME.COLORS.TEXT};
+    color: ${({ theme }) => theme.COLORS.TEXT};
     letter-spacing: 2px;
     margin-top: 30px;
     padding: 0px 50px;
@@ -109,7 +109,7 @@ export const Name = styled.h1`
    
 `;
 export const Bio = styled.h2`
-    color: ${THEME.COLORS.CAPTION_400};
+    color: ${({ theme }) => theme.COLORS.CAPTION_400};
     letter-spacing: 2px;
     text-align: center;
     animation: ${opacity} 1s;
@@ -146,7 +146,7 @@ export const ButtContainer = styled.div`
     justify-content: center;
 
     h2 {
-        color: ${THEME.COLORS.CAPTION_400};
+        color: ${({ theme }) => theme.COLORS.CAPTION_400};
         letter-spacing: 2px;
         text-align: center;
         animation: ${opacity} 1s;

@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { THEME } from "../../theme";
-import { opacity } from "../../styles/keyframes";
+import { opacity } from '../../styles/keyframes';
 
 export const Container = styled(motion.main)`
     display: flex;
@@ -15,9 +14,10 @@ export const Container = styled(motion.main)`
     padding-bottom: 10vh;
     position: relative;
 `;
+
 export const TextContainer = styled.div`
     display: flex;
-    background: ${THEME.COLORS.OVERLAY};
+    background: ${({ theme }) => theme.COLORS.OVERLAY};
     height: auto;
     border-radius: 10px;
     width: 80vw;
@@ -32,17 +32,19 @@ export const TextContainer = styled.div`
     flex-direction: column;
     align-items: flex-start;
 `;
+
 export const Text = styled.p`
-    color: ${THEME.COLORS.TEXT};
+    color: ${({ theme }) => theme.COLORS.TEXT};
     position: relative;
     margin: 30px 40px 0px 40px;
     font-size: 18px;
     font-weight: 500;
     animation: ${opacity} 3s ease-in-out;
 `;
+
 export const PartContainer = styled.div`
     display: flex;
-    background: ${THEME.COLORS.OVERLAY};
+    background: ${({ theme }) => theme.COLORS.OVERLAY};
     border-radius: 10px;
     width: 80%;
     height: auto;
@@ -61,8 +63,9 @@ export const PartContainer = styled.div`
         flex-direction: column;
     }
 `;
+
 export const PartTitle = styled.h2`
-    color: ${THEME.COLORS.CAPTION_400};
+    color: ${({ theme }) => theme.COLORS.CAPTION_400};
     text-align: center;
     animation: ${opacity} 1s;
     width: 100%;
@@ -77,4 +80,3 @@ export const PartTitle = styled.h2`
         font-size: 14px;
     }
 `;
-

@@ -14,32 +14,34 @@ function About() {
                     transition: {duration: 0.5, ease: "circIn"}}}>
                 <Titles item={title}/>
                     <TextContainer>
-                    <Text>Apaixonado por tecnologia e inovações, comecei a trabalhar com esse segmento aos 14 anos em uma loja de informática, 
-                        meu trabalho era garantir todo e qualquer tipo de manutenção e lá foi o início do meu aprendizado. </Text> 
+                    <Text>
+                        Profissional experiente em tecnologia da informação, com sólida formação em Análise de Sistemas e mais de 6 anos de experiência em gerenciamento e análise de dados.
+                    </Text>
 
-                    <Text>Me formei em 2020 como Analista de Sistemas pela Universidade Unigranrio, que tinha como base de estudos ecossistema Java. </Text> 
+                    <Text>
+                        Iniciei minha jornada na área de tecnologia aos 14 anos, trabalhando com manutenção de computadores e redes. Desde então, venho expandindo constantemente meus conhecimentos e habilidades técnicas.
+                    </Text>
 
-                    <Text>Trabalho a mais de 6 anos como Administrador de Banco de Dados. Utilizando a linguagem SQL, sou responsável por manter o acesso aos dados, 
-                        a segurança do banco e fazer manutenções periódicas para manter o bom fluxo dos dados. Temos um banco de dados relacional que cadastra pessoas para o 
-                        Programa Habitacional do município onde resido.</Text>  
+                    <Text>
+                        Como Analista de Dados, contribuo para estratégias baseadas em dados pré-estruturados, desenvolvo soluções para otimização de processos e gerencio bancos de dados relacionais, garantindo a segurança e eficiência no fluxo de informações.
+                    </Text>
 
-                    <Text>Minhas habilidades de desenvolvimento voltadas para front-end web e mobile são utilizando o ecossistema Javascript, com tecnologias como React e React-Native Framework, 
-                        TypeScript e diversas ferramentas e libs. Para back-end utilizo Java ou Javascript.</Text> 
+                    <Text>
+                        Possuo experiência sólida no desenvolvimento web e mobile utilizando tecnologias modernas como JavaScript, TypeScript, React, React Native, Vue.js e Node.js. Aplico consistentemente práticas de Clean Code, Design Patterns e metodologias ágeis.
+                    </Text>
 
-                    <Text>Possuo conhecimento de Design Patterns, Metodologias ágeis, Gerenciamento de estados, Hooks, ContextAPI, Consumo de API's, Boa lógica, 
-                        criação de algoritmos e boas práticas de desenvolvimento. </Text>
+                    <Text>
+                        Minha expertise inclui Python para análise de dados, SQL para gerenciamento de banco de dados, e domínio de ferramentas de versionamento como Git Flow.
+                    </Text>
 
-                    <Text>Domino ferramentas como Figma, Photoshop e Illustrator, e nas horas vagas sou designer gráfico freelancer na Goulart Design Gráfico. </Text> 
+                    <Text>
+                        Além das habilidades técnicas, possuo conhecimento profissional em ferramentas de design como Figma, Adobe Photoshop e Illustrator, permitindo uma abordagem completa no desenvolvimento de interfaces e experiências de usuário.
+                    </Text>
 
-                    <Text>Busco agora oportunidades na área de desenvolvimento web e mobile, tanto front quanto back-end, sou aberto a propostas em qualquer 
-                        tipo de linguagem e estou aberto a aprender novas tecnologias para me qualificar para qualquer desafio.</Text> 
+                    <Text>
+                        Busco constantemente aprimorar minhas habilidades e conhecimentos, estando sempre aberto a novos desafios e tecnologias que possam agregar valor aos projetos em que atuo.
+                    </Text>
                     </TextContainer>
-
-                    <PartTitle>Parceiros que confiam no meu trabalho:</PartTitle>
-                        <PartContainer>
-                            <Partners/>
-                        </PartContainer>
-
             </Container>
         </>
     );

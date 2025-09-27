@@ -1,78 +1,91 @@
 import { useEffect, useState } from 'react';
 import { GithubTypes } from '../../@types/GithubTypes';
 
-import {Container, 
-    ButtContainer, 
-    Name, 
-    Photo,
-    Bio, 
-    Adjust,
-    More} from './styles';
+import {
+  Container,
+  ButtContainer,
+  Name,
+  Photo,
+  Bio,
+  Adjust,
+  More
+} from './styles';
 
-import {TiLocationOutline, TiMail} from 'react-icons/ti'
+import { TiLocationOutline, TiMail } from 'react-icons/ti';
 import SocialButton from '../../components/SocialButton';
 
 import api from '../../service/api';
 import { SocialProps } from '../../utils/socialMedia';
-import { THEME } from '../../theme';
+import { useTheme } from '../../theme';
 
 function Home() {
-    const [response, setResponse] = useState(() => {
-        const storageData = localStorage.getItem('apiData');
-        if (storageData) {
-          return JSON.parse(storageData);
-        }
-        return null;
-      });
+  const { theme } = useTheme();
+  const [profile, setProfile] = useState<GithubTypes | null>(() => {
+    const storageData = localStorage.getItem('apiData');
+    return storageData ? (JSON.parse(storageData) as GithubTypes) : null;
+  });
 
-    useEffect(() => {
-        if (!response) {
-        api.get('users/codexdevbrn').then(response => {
-            const data: GithubTypes = response.data;
-            setResponse(data);
-            localStorage.setItem('apiData', JSON.stringify(data))
-        }).catch(err => {
-            console.log(err);
-        })
-    }
-    }, [response]);
+  useEffect(() => {
+    let mounted = true;
 
-    return (
-    <>
-        <Container
-        key='home'
-        initial={{width: 0}} 
-        animate={{width: "100%"}} 
-        exit={{x: window.innerWidth, transition: {duration: 0.5}}}>
-            <Adjust>
-            <Photo src={response?.avatar_url}></Photo>
-            <Name>{response?.name}</Name>
-            </Adjust>
-            <Bio>{response?.bio}</Bio>
-            <More>
-                <TiLocationOutline color={THEME.COLORS.SUCCESS} size={20} />
-                <span>{response?.location}</span>
-            </More>
-            <More>
-                <TiMail color={THEME.COLORS.SUCCESS} size={20} />
-                <a href="mailto:brunoduarte.inf@outlook.com">{response?.email}</a>
-            </More>   
-             <ButtContainer>
-             <h2>Social:</h2>
-            {SocialProps.map((social, idx) => {
-                return(
-                    <SocialButton 
-                    url={social.url} 
-                    idx={idx} 
-                    color={social.color}
-                    key={idx}/>
-                )
-            })}
-            </ButtContainer>
-        </Container>
-    </>
-    )
+    const fetchProfile = async () => {
+      if (profile) return;
+      try {
+        const res = await api.get<GithubTypes>('users/codexdevbrn');
+        if (!mounted) return;
+        setProfile(res.data);
+        localStorage.setItem('apiData', JSON.stringify(res.data));
+      } catch (err) {
+        console.error('GitHub API error', err);
+      }
+    };
 
+    fetchProfile();
+
+    return () => {
+      mounted = false;
+    };
+    // run once on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <Container
+      key="home"
+      initial={{ width: 0 }}
+      animate={{ width: '100%' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
+    >
+      <Adjust>
+        <Photo src={profile?.avatar_url} alt={profile?.name ?? 'avatar'} />
+        <Name>{profile?.name}</Name>
+      </Adjust>
+
+      <Bio>{profile?.bio}</Bio>
+
+      <More>
+        <TiLocationOutline color={theme.COLORS.SUCCESS} size={20} />
+        <span>{profile?.location}</span>
+      </More>
+
+      <More>
+        <TiMail color={theme.COLORS.SUCCESS} size={20} />
+        <a href={`mailto:${profile?.email}`}>{profile?.email}</a>
+      </More>
+
+      {/* <ButtContainer>
+        <h2>Social:</h2>
+        {SocialProps.map((social) => (
+          <SocialButton
+            key={social.id}
+            url={social.url}
+            idx={social.id}
+            color={social.color}
+          />
+        ))}
+      </ButtContainer> */}
+    </Container>
+  );
 }
 
 export default Home;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { THEME } from "../../theme";
 
 export const BoxTitle = styled.div`
-    background-color: ${THEME.COLORS.SHAPE};
+    background-color: ${({ theme }) => theme.COLORS.SHAPE};
+    color: ${({ theme }) => theme.COLORS.CAPTION_400};
     width: 80vw;
     height: 5vh;
     border-radius: 5px;
@@ -32,7 +32,7 @@ export const BoxTitle = styled.div`
 `; 
 export const Title = styled.h1`
     position: relative;
-    color: ${THEME.COLORS.TEXT};
+    color: ${({ theme }) => theme.COLORS.TEXT};
     font-size: 22px;
 
     @media (max-width: 200px) {
