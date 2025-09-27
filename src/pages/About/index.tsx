@@ -1,7 +1,5 @@
-import { Container, Text, TextContainer, PartContainer, PartTitle } from "./styles";
+import { Container, Text, TextContainer} from "./styles";
 import Titles from "../../components/Titles";
-import Partners from "../../components/Partners";
-
 function About() {
     const title = 'Sobre';
     return(

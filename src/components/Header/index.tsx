@@ -8,7 +8,9 @@ function Header(){
      const { theme } = useTheme();
 
      useEffect(() => {
+// sourcery skip: avoid-function-declarations-in-blocks
          function handleResize() {
+// sourcery skip: merge-nested-ifs
            if (navRef.current) {
              if (window.innerWidth > 1024) {
                navRef.current.classList.remove('responsive');
